@@ -1,4 +1,4 @@
-### Biologia
+# Biologia
 ## Efeitos da Cocaína no Sistema Nervoso
 
 <img src="./assets/siteImage.png" alt="Imagem da página inicial do site">
