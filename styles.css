@@ -474,7 +474,7 @@ footer .buttons a:hover {
         display: none;
     }
     main {
-        margin: 5rem auto;
+        margin: 5rem auto 0 auto;
         max-width: 80vh;
     }   
     #introduction .title {
@@ -558,6 +558,65 @@ footer .buttons a:hover {
         width: 20rem;
         height: 4rem;
         font-size: 1rem;
+    }
+    footer {
+        display: block;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    footer .buttons button {
+        margin-bottom: 2rem;
+    }
+    #modal {
+        width: 100%;
+        height: 100%;
+        
+        background-color: #000000b3;
+    
+        position: fixed;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        opacity: 0;
+        visibility: hidden;
+        z-index: 999;
+    }
+    
+    #modal .modal-wrapper {
+        font-size: 1.2rem;
+        color: var(--green);
+        position: relative;
+        border-radius: 1rem;
+        background-color: var(--white);
+        width: 90vw;
+        z-index: 10; 
+    }
+    
+    #modal .modal-wrapper h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    
+    #modal .modal-wrapper ul li {
+        margin-bottom: 1rem;
+    }
+
+    #modal .modal-wrapper .closeModalButton {
+        display: flex;
+        justify-content: center;
+        margin: 1rem auto;
+        color: var(--light-blue);
+        background-color: var(--red);
+        padding: 0.8rem 3rem;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    #modal .modal-wrapper .closeModalButton:hover {
+        color: var(--red);
+        background-color: var(--light-blue);
+        padding: 0.8rem 3rem;
     }
 }
 
