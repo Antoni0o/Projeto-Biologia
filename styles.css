@@ -1,0 +1,598 @@
+/* Globals */
+:root {
+    --white: #EDF6F9;
+    --black: #001219;
+    --blue: #005F73;
+    --light-blue: #C1E4DB;
+    --middle-green-blue: #94D2BD;
+    --green: #0A9396;
+    --red: #AE2012;
+    --yellow: #EE9B00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    cursor: url(./assets/cursor.png), default;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+}
+
+html {
+    width: 100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+a {
+    cursor: url(./assets/pointer.png), pointer;
+}
+
+button {
+    transition: .5s;
+    cursor: url(./assets/pointer.png), pointer;
+    background-color: var(--light-blue);
+    color: var(--green);
+    border-radius: 1rem;
+    border: none;
+    padding: 1rem;
+    margin: 1rem;
+}
+button:hover{
+    transition: .5s;
+    border-radius: 0.5rem;
+    padding: 1.5rem
+}
+button h2 {
+    cursor: url(./assets/pointer.png), pointer;
+}
+/* Scroll */
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #edf6f9;
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #C1E4DB; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+      background: #94D2BD; 
+    }
+    
+    
+
+/* Header */
+header {
+    padding: 0.5rem 2rem;
+    background-color: var(--middle-green-blue);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: slide-down 1s ease 0s 1 normal forwards;  
+}
+
+header h1 {
+    font-size: 2.4rem;
+    color: var(--blue);
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+nav h2 a {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--blue);
+    outline: none; 
+}
+nav h2 a:hover {
+    transition: .4s;
+}   
+.background-nav-color:hover {
+    background-image: linear-gradient(120deg,#C1E4DB,#d3eee7);
+    background-repeat: no-repeat;
+    background-size: 88% 1rem;
+    background-position: 100% 88%;
+}
+
+
+
+/* Main */
+.background-text-color {
+    background-image: linear-gradient(120deg,#C1E4DB,#d1f0e8);
+    background-repeat: no-repeat;
+    background-size: 92% 1rem;
+    background-position: 100% 88%;
+    font-weight: inherit;
+}
+
+/* introduction */
+#introduction {
+    margin: auto;
+    text-align: center;
+} 
+
+#introduction .container {
+    animation-duration: 2s;
+    animation-name: slide-right; 
+}
+
+#introduction .title {
+    display: flex;
+    justify-content: center;    
+    font-weight: bold;
+    font-size: 6rem;
+    color: var(--blue);
+    margin: 2rem 0;
+}
+#introduction .title .background-text-color {
+    transition: 0.5s;
+    background-size: 90% 30%;
+    background-position: 100% 90%;
+    background-repeat: no-repeat;
+}
+#introduction .title:hover {
+    font-size: 7rem;
+}
+#introduction .title .background-text-color:hover {
+    transition: 0.5s;
+    background-size: 30% 30%;
+    background-position: 100% 90%;
+}
+
+#introduction h2 {
+    display: flex;
+    justify-content: center;  
+    margin: 1rem;
+    color: var(--green);
+    font-size: 2.4rem;
+    transition: .5s;
+}
+#introduction h2:hover {
+    transition: .5s;
+    color: var(--green);
+    font-size: 2rem;
+}
+
+#introduction .participants { 
+    transition: .5s;
+    margin: 5rem auto;
+    background-color: var(--light-blue);
+    width: 80vw;
+    padding: 2rem 1rem;
+    border-radius: 2rem;
+}
+#introduction .participants:hover {
+    transition: .5s;
+    background-color: var(--light-blue);
+    opacity: 80%;
+    padding: 4rem 2rem;
+    border-radius: 1rem;
+}
+
+#introduction .participants h3 {
+    display: flex;
+    justify-content: center;
+    color: var(--blue);
+    font-size: 2rem;
+}
+
+#introduction .participants ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--green);
+    font-size: 1.8rem;
+}
+
+/*About*/
+#about { 
+    padding: 10rem 0;
+    margin: 30rem auto 0 auto;
+    text-align: center;
+    background-color: var(--light-blue);
+}
+
+#about .container {
+    transition: .2s;    
+    animation-duration: 3s;
+    animation-name: slide-right; 
+}
+
+#about h1 {
+    transition: .5s;
+    display: flex;
+    justify-content: center;    
+    font-weight: bold;
+    font-size: 6rem;
+    color: var(--blue);
+    margin: 2rem auto;
+}
+#about h1:hover {
+    transition: .5s;
+    font-size: 6.8rem
+}
+
+#about p {
+    margin: 2rem 10rem;
+    font-size: 1.8rem;
+    color: var(--black);
+}
+
+/* More */
+#more {
+    background-color: var(--blue);
+    padding: 10rem 0;
+}
+
+#more h1 {
+    transition: .5s;
+    display: flex;
+    justify-content: center;    
+    font-weight: bold;
+    font-size: 6rem;
+    color: var(--light-blue);
+    margin: 2rem auto;
+    text-align: center;
+}
+#more h1:hover {
+    transition: .5s;
+    font-size: 6.8rem
+}
+#more p {
+    margin: 2rem 10rem;
+    font-size: 1.8rem;
+    color: var(--white);
+    text-align: center;
+}
+
+#more ul {
+    transition: .5s;
+    color: var(--middle-green-blue);
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin: 1rem 42vw;
+}
+#more li {
+    transition: .5s;
+}
+#more li:hover {
+    transition: .5s;
+    font-size: 2.2rem;
+}
+
+/* Risks */
+#risks {
+    background-color: var(--black);
+    padding: 10rem 0;
+    text-align: center;
+}
+#risks h1 {
+    transition: .5s;
+    display: flex;
+    justify-content: center;    
+    font-weight: bold;
+    font-size: 6rem;
+    color: var(--light-blue);
+    margin: 2rem auto;
+}
+#risks h1:hover {
+    transition: .5s;
+    font-size: 6.8rem
+}
+
+#risks p {
+    color: var(--white);
+    font-size: 1.8rem;
+    margin: 2rem 10rem;
+}
+
+#risks .effects {
+    display: block;
+    margin-top: 10rem;
+}
+
+#risks .effects p {
+    display: none;
+    transition: .5s;
+    background: var(--light-blue);
+    color: var(--black);
+    padding: 1rem 5rem 10rem 5rem;
+    border-radius: 1rem;
+}
+#risks .effects p:hover {
+    transition: .5s;
+    padding: 1rem 2.5rem 5rem 2.5rem;
+    border-radius: 0.5rem;
+}
+#risks .effects p.active {
+    transition: .5s;
+    animation: fade-in 1s ease 0s 1 normal forwards;
+    display: block;
+}
+
+#risks .effects button {
+    display: block;
+}
+
+#risks .effects .buttonEffects1 {
+    width: 30rem;
+    height: 5rem;
+    margin: 2rem auto;
+    background-color: var(--white);
+    font-size: 2rem;
+}
+
+#risks .effects .buttonEffects2 {
+    width: 30rem;
+    height: 5rem;
+    margin: 2rem auto;
+    background: var(--yellow);
+    color: var(--white);
+    font-size: 1.6rem;
+}
+
+#risks .effects .buttonEffects3 {
+    width: 30rem;
+    height: 5rem;
+    margin: 2rem auto;
+    background: var(--red);
+    color: var(--white);
+    font-size: 1.6rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--middle-green-blue);
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h1 {
+    font-size: 2.4rem;
+    color: var(--blue);
+    font-weight: bold;
+}
+
+footer .buttons .openModalButton {
+    color: var(--white);
+    background-color: var(--black);
+    padding: 1.4rem 7rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+footer .buttons .openModalButton:hover {
+    color: var(--black);
+    background-color: var(--white);
+    padding: 1.4rem 7rem;
+}
+
+footer .buttons a{
+    transition: .5s;
+    text-decoration: none;
+    font-size: 1.6rem;
+    border: 2px solid var(--blue);
+    color: var(--blue);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}    
+footer .buttons a:hover {
+    transition: .5s;
+    border-color: var(--black);
+    color: var(--black);
+}
+
+/*Modal*/
+#modal.active {
+    animation: fade-in 1s ease 0s 1 normal forwards;
+    transition: .5s;
+    opacity: 100%;
+    visibility: visible;
+}
+
+#modal {
+    width: 100%;
+    height: 100%;
+    
+    background-color: #000000b3;
+
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+
+#modal .modal-wrapper {
+    font-size: 1.6rem;
+    color: var(--green);
+    position: relative;
+    border-radius: 1rem;
+    background-color: var(--white);
+    padding: 2.4rem;
+    z-index: 10; 
+}
+
+#modal .modal-wrapper h1 {
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+#modal .modal-wrapper .closeModalButton {
+    display: flex;
+    margin: 1rem auto;
+    color: var(--light-blue);
+    background-color: var(--red);
+    padding: 1.4rem 7rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+#modal .modal-wrapper .closeModalButton:hover {
+    color: var(--red);
+    background-color: var(--light-blue);
+    padding: 1.4rem 7rem;
+}
+
+/* Media Queries */
+@media(max-width: 860px) {
+    body {
+        font-size: 57.5%;
+        width: 100vw;
+        overflow: hidden;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    nav {
+        display: none;
+    }
+    main {
+        margin: 5rem auto;
+        max-width: 80vh;
+    }   
+    #introduction .title {
+        font-size: 2rem;
+    }
+    #introduction .title:hover {
+        font-size: 2.8rem;
+    }
+    #introduction h2 {
+        margin: 1rem auto;
+        width: 80vw;
+        font-size: 1.6rem;
+        justify-content: start;
+    }
+    #introduction h2:hover{
+        font-size: 1.8rem;
+    }
+    #introduction .participants {
+        width: 90vw;
+        margin: auto 1rem;
+    }
+    #introduction .participants ul {
+        display: block;
+        color: var(--green);
+        font-size: 1.2rem;
+    }
+    #about h1 {
+        font-size: 2rem; 
+    }
+    #about p {
+        font-size: 1.2rem;
+        margin: 2rem 5px;
+    }
+    #more h1 {
+        font-size: 2rem;
+    }
+    #more h1:hover {
+        font-size: 3rem;
+    }
+    #more p {
+        font-size: 1.2rem;
+        margin: 2rem 10px;
+    }
+    #more ul {
+        text-align: center;
+        margin: 1rem auto;
+        font-size: 1.2rem;
+    }
+    #risks h1 {
+        font-size: 2rem;
+    }
+    #risks h1:hover {
+        font-size: 2.5rem
+    }
+    #risks p {
+        font-size: 1.2rem;
+        margin: 2rem 10px;
+    }
+    #risks .effects .buttonEffects1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20rem;
+        height: 4rem;
+        font-size: 1rem;
+    }
+    
+    #risks .effects .buttonEffects2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20rem;
+        height: 4rem;
+        font-size: 1rem;
+    }
+    
+    #risks .effects .buttonEffects3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20rem;
+        height: 4rem;
+        font-size: 1rem;
+    }
+}
+
+/* Animations */
+
+  @keyframes slide-right {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  @keyframes slide-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-250px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
